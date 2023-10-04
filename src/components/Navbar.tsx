@@ -6,7 +6,7 @@ import BurgerMenu from './BurgerMenu'
 
 function Navbar() {
   return (
-    <nav className="sticky top-0 min-w-[400px] navbar w-full backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 z-20 tracking-widest h-44 uppercase font-semibold">
+    <nav className="sticky top-0 min-w-[350px] navbar w-full backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 z-20 tracking-widest h-44 uppercase font-semibold">
       <div className="container">
         <div className="navbar-start hidden lg:flex gap-12 xl:gap-24 text-neutral-content font-secondary">
           <Link href="/">home</Link>

@@ -29,7 +29,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={`${italiana.variable} ${adamina.variable}`}>
+      <body
+        className={`${italiana.variable} ${adamina.variable} overflow-x-hidden`}
+      >
         <ThemeProvider>
           <Navbar />
           <div className="container">{children}</div>

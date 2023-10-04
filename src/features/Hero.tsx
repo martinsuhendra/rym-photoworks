@@ -19,6 +19,8 @@ function Hero() {
             fill
             alt="background image"
             className="object-cover brightness-50"
+            placeholder="blur"
+            priority
           />
         </div>
       </div>
