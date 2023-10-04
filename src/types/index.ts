@@ -14,3 +14,8 @@ export type BlogCategory = {
   label: string
   color: ColorVariations
 }
+
+export type Menu = {
+  label: string
+  url: string
+}
