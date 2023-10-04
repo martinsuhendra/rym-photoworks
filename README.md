@@ -1,9 +1,9 @@
 # Next.js TailwindCSS Template
 
-This is a **highly** opinionated [Next.js](https://nextjs.org/) template bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), originally from this [nextjs-template](https://github.com/Howard86/nextjs-template).
+This is a **highly** opinionated [Next.js](https://nextjs.org/) template bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
-You can visit this on:
-[Blog App](https://martinsuhendra.github.io/next-template-app/)
+You can visit on:
+
 
 Shipped with following developer tools:
 
