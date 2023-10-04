@@ -1,7 +1,7 @@
+import { PropsWithChildren } from 'react'
 import type { Metadata } from 'next'
 import { Adamina, Italiana } from 'next/font/google'
 
-import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import ThemeProvider from '@/providers/ThemeProvider'
 
@@ -26,20 +26,14 @@ export const metadata: Metadata = {
   description: 'Wedding Photo & Videography',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={`${italiana.variable} ${adamina.variable}`}>
         <ThemeProvider>
-          <div className="container">
-            <Navbar />
-            {children}
-            <Footer />
-          </div>
+          <Navbar />
+          <div className="container">{children}</div>
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>
