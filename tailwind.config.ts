@@ -4,6 +4,10 @@ const config: Config = {
   darkMode: ['class', '[data-theme=dark]'],
   content: ['./src/**/*.{ts,tsx}', 'node_modules/daisyui/dist/**/*.js'],
   theme: {
+    fontFamily: {
+      primary: 'var(--primary-font)',
+      secondary: 'var(--secondary-font)',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
