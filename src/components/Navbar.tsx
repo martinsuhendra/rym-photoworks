@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="sticky top-0 min-w-[350px] navbar w-full backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 z-20 tracking-widest h-44 uppercase font-semibold">
       <div className="container">
-        <div className="navbar-start hidden lg:flex gap-12 xl:gap-24 text-neutral-content font-secondary">
+        <div className="navbar-start hidden lg:flex gap-12 text-neutral-content font-secondary">
           <Link href="/">home</Link>
           <Link href="/">about</Link>
           <Link href="/">services</Link>
@@ -17,9 +17,9 @@ function Navbar() {
         <div className="navbar-center relative w-[80px] h-[49px] lg:w-[143px] lg:h-[89px]">
           <Image src={Logo} fill alt="rym photoworks logo" />
         </div>
-        <div className="navbar-end navbar flex-1 lg:flex-auto gap-12 xl:gap-24">
+        <div className="navbar-end navbar flex-1 lg:flex-auto gap-12">
           <button
-            className="btn rounded-xs btn-sm lg:btn-md text-sm"
+            className="btn rounded-xs btn-sm lg:btn-md text-sm font-primary"
             type="button"
           >
             get in touch
