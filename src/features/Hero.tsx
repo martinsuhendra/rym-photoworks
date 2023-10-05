@@ -24,8 +24,8 @@ function Hero() {
           />
         </div>
       </div>
-      <div className="hero-content my-auto text-neutral-content ">
-        <div className="max-w-md text-center sm:text-left animate-fade-left animate-once animate-ease-out animate-delay-700 animate-duration-15300">
+      <div className="hero-content my-auto text-neutral-content">
+        <div className="max-w-md text-center sm:text-left animate-fade-left animate-once animate-ease-out animate-delay-[2000ms]">
           <h5 className="font-secondary tracking-widest uppercase text-xs text-neutral-content mb-5">
             let us make to
           </h5>
