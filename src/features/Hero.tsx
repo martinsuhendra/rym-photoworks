@@ -25,8 +25,8 @@ function Hero() {
         </div>
       </div>
       <div className="hero-content my-auto text-neutral-content ">
-        <div className="max-w-md text-center sm:text-left">
-          <h5 className="font-secondary tracking-widest uppercase text-neutral-content mb-5">
+        <div className="max-w-md text-center sm:text-left animate-fade-left animate-once animate-ease-out animate-delay-700 animate-duration-15300">
+          <h5 className="font-secondary tracking-widest uppercase text-xs text-neutral-content mb-5">
             let us make to
           </h5>
           <h1 className="mb-10 text-5xl font-primary tracking-wider">
@@ -35,7 +35,7 @@ function Hero() {
 
           <button
             type="button"
-            className="btn btn-primary btn-wide text-neutral-content"
+            className="btn btn-primary btn-wide text-neutral-content font-primary"
           >
             Explore
           </button>
