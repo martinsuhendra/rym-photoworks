@@ -30,11 +30,11 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body
-        className={`${italiana.variable} ${adamina.variable} overflow-x-hidden`}
+        className={`${italiana.variable} ${adamina.variable} overflow-x-hidden overscroll-none`}
       >
         <ThemeProvider>
           <Navbar />
-          <div className="container">{children}</div>
+          <div>{children}</div>
           {/* <Footer /> */}
         </ThemeProvider>
       </body>

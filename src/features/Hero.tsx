@@ -7,7 +7,7 @@ import HeroImage from 'public/cover.jpg'
 function Hero() {
   const [imgComplete, setImgComplete] = useState(false)
   return (
-    <div className="hero place-items-center md:place-items-start min-h-[calc(100vh-11rem)] inset-0">
+    <div className="container hero place-items-center md:place-items-start min-h-[calc(100vh-11rem)] inset-0">
       <div className="carousel">
         <div className="carousel-item">
           <Image
