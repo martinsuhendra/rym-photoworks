@@ -1,14 +1,28 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from 'public/logo.png'
 
+import useScrollPosition from '@/utils/useScrollPosition'
+
 import BurgerMenu from './BurgerMenu'
 
+const HERO_HEIGHT = 712
+
 function Navbar() {
+  const scrollPosition = useScrollPosition()
+
   return (
     <nav className="sticky top-0 min-w-[350px] navbar w-full backdrop-filter backdrop-blur-lg bg-opacity-30 border-gray-200 z-20 tracking-widest h-44 uppercase font-semibold">
       <div className="container">
-        <div className="navbar-start hidden lg:flex gap-12 text-neutral-content font-secondary">
+        <div
+          className={`navbar-start hidden lg:flex gap-12 ${
+            scrollPosition > HERO_HEIGHT
+              ? 'text-neutral'
+              : 'text-neutral-content'
+          } font-secondary`}
+        >
           <Link href="/">home</Link>
           <Link href="/">about</Link>
           <Link href="/">services</Link>
@@ -24,7 +38,13 @@ function Navbar() {
           >
             get in touch
           </button>
-          <span className="hidden lg:flex text-neutral-content font-secondary">
+          <span
+            className={`hidden lg:flex ${
+              scrollPosition > HERO_HEIGHT
+                ? 'text-neutral'
+                : 'text-neutral-content'
+            } font-secondary`}
+          >
             faq
           </span>
         </div>
