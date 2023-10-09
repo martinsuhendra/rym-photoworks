@@ -59,6 +59,7 @@
     "eslint-plugin-unicorn": "^48.0.1",
     "husky": "^8.0.3",
     "prettier": "^3.0.3",
+    "react-intersection-observer": "^9.5.2",
     "release-it": "^16.1.5"
   },
   "packageManager": "pnpm@8.7.0"
