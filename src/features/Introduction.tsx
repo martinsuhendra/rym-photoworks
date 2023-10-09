@@ -15,11 +15,11 @@ function Introduction() {
       ref={ref}
     >
       <div className="relative flex py-5 items-center">
-        <div className="flex-grow border-t border-black" />
-        <h1 className=" text-center flex-shrink mx-4 md:mx-12 uppercase font-primary text-3xl sm:text-4xl md:text-5xl tracking-widest">
+        <div className="flex-grow border-t dark:border-gray-400 border-black" />
+        <h1 className="text-center flex-shrink mx-4 md:mx-12 uppercase font-primary text-3xl sm:text-4xl md:text-5xl tracking-widest">
           welcome to rym
         </h1>
-        <div className="flex-grow border-t border-black" />
+        <div className="flex-grow border-t dark:border-gray-400 border-black" />
       </div>
       <div className="flex flex-col items-center justify-center gap-3 text-xs md:text-md">
         <h5 className="text-center font-secondary tracking-wide">
