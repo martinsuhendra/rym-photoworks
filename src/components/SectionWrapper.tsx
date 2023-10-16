@@ -13,7 +13,7 @@ function SectionWrapper({
   bg = 'bg-stone-100',
 }: SectionWrapperProps) {
   return (
-    <div className={`mb-24 ${bg}`}>
+    <div className={`pb-12 ${bg}`}>
       <div className="container py-12">
         <div className="py-12">
           {subtitle && (

@@ -11,7 +11,7 @@ function Introduction() {
 
   return (
     <div
-      className={`container py-12 md:py-24 ${
+      className={`container py-24 ${
         inView ? 'animate-fade-up ' : 'animate-none'
       }`}
       ref={ref}
