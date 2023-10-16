@@ -1,5 +1,6 @@
 import Hero from '@/features/Hero'
 import Introduction from '@/features/Introduction'
+import Photography from '@/features/Photography'
 import Services from '@/features/Services'
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Introduction />
       <Services />
+      <Photography />
     </main>
   )
 }
