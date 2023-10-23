@@ -32,7 +32,11 @@ const MOCKED_DATA: PhotoCardType[] = [
 ]
 
 function Carousel({ children }: PropsWithChildren) {
-  return <div className="carousel w-full gap-24 my-24">{children}</div>
+  return (
+    <div className="carousel justify-center w-full gap-24 my-24">
+      {children}
+    </div>
+  )
 }
 
 function Slide({ children }: PropsWithChildren) {
@@ -45,7 +49,7 @@ function Slide({ children }: PropsWithChildren) {
 
 function SlideNavigator() {
   return (
-    <div className="flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 top-1/2">
+    <div className="flex justify-center gap-4 transform -translate-y-1/2">
       <a href="#slide1" className="btn btn-circle">
         ❮
       </a>
@@ -58,7 +62,7 @@ function SlideNavigator() {
 
 function SlideItem({ image, title, caption }: PhotoCardType) {
   return (
-    <div className="w-1/3">
+    <div className="w-full xl:w-1/3">
       <PhotoCard image={image} title={title} caption={caption} />
     </div>
   )
