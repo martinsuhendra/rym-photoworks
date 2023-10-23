@@ -19,3 +19,10 @@ export type Menu = {
   label: string
   url: string
 }
+
+export type PhotoCardType = {
+  id?: string
+  title: string
+  caption: string
+  image: StaticImageData
+}

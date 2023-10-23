@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import RightImage from 'public/evan-monica.jpg'
 import LeftImage from 'public/riko-becca.jpg'
 
+import PhotoCarousel from '@/components/PhotoCarousel'
 import PhotoHomeCard from '@/components/PhotoHomeCard'
 import SectionWrapper from '@/components/SectionWrapper'
 
@@ -38,6 +39,8 @@ function Photography() {
           />
         </div>
       </div>
+      {/* // TODO: Create Carousel component and render data programatically */}
+      <PhotoCarousel />
     </SectionWrapper>
   )
 }
