@@ -1,12 +1,8 @@
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
-interface PhotoCardProps {
-  image: StaticImageData
-  title: string
-  caption: string
-}
+import { PhotoCardType } from '@/types'
 
-function PhotoCard({ image, title, caption }: PhotoCardProps) {
+function PhotoCard({ image, title, caption }: PhotoCardType) {
   return (
     <div>
       <div className="w-[281px] h-[430px] rounded-t-full overflow-hidden relative">
