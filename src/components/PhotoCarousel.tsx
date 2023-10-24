@@ -39,9 +39,13 @@ function Carousel({ children }: PropsWithChildren) {
   )
 }
 
-function Slide({ children }: PropsWithChildren) {
+interface PhotoSlideProps extends PropsWithChildren {
+  id: string
+}
+
+function PhotoSlide({ children, id }: PhotoSlideProps) {
   return (
-    <div id="slide1" className="carousel-item items-center gap-24 relative">
+    <div id={id} className="carousel-item items-center gap-24 relative">
       {children}
     </div>
   )
@@ -72,11 +76,11 @@ function PhotoCarousel() {
   return (
     <div>
       <Carousel>
-        <Slide>
+        <PhotoSlide id="#photo-slide1">
           {MOCKED_DATA.map(({ id, image, title, caption }) => (
             <SlideItem key={id} {...{ image, title, caption }} />
           ))}
-        </Slide>
+        </PhotoSlide>
       </Carousel>
       <SlideNavigator />
       <div className="flex justify-center">
