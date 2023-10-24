@@ -1,3 +1,4 @@
+import Contacts from '@/features/Contacts'
 import Hero from '@/features/Hero'
 import Introduction from '@/features/Introduction'
 import Photography from '@/features/Photography'
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <Photography />
       <Videography />
+      <Contacts />
     </main>
   )
 }
