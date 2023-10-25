@@ -35,7 +35,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <ThemeProvider>
           <Navbar />
           <div>{children}</div>
-          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>

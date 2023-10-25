@@ -45,7 +45,10 @@ interface PhotoSlideProps extends PropsWithChildren {
 
 function PhotoSlide({ children, id }: PhotoSlideProps) {
   return (
-    <div id={id} className="carousel-item items-center gap-24 relative">
+    <div
+      id={id}
+      className="carousel-item items-center gap-24 relative scroll-mt-24"
+    >
       {children}
     </div>
   )

@@ -39,7 +39,7 @@ interface VideoSlideProps extends PropsWithChildren {
 
 function VideoSlide({ children, id }: VideoSlideProps) {
   return (
-    <div id={id} className="carousel-item relative w-full">
+    <div id={id} className="carousel-item relative w-full scroll-mt-24">
       {children}
     </div>
   )
@@ -72,7 +72,7 @@ function VideoCarousel() {
         return (
           <VideoSlide key={id} id={`video-slide-${index}`}>
             <iframe
-              className="aspect-video"
+              className="aspect-video min-w-full"
               src={url}
               title={title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"

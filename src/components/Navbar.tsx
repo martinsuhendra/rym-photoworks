@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import Logo from 'public/logo.png'
 
 import useScrollPosition from '@/utils/useScrollPosition'
@@ -12,6 +13,8 @@ const HERO_HEIGHT = 712
 
 function Navbar() {
   const scrollPosition = useScrollPosition()
+  const pathname = usePathname()
+  const isNotHome = pathname.split('/')[1] !== ''
   const isOffset = scrollPosition > HERO_HEIGHT
   const navHeight = isOffset ? 'lg:h-24' : 'lg:h-40'
   const logoSize = isOffset
@@ -25,7 +28,7 @@ function Navbar() {
       <div className="container">
         <div
           className={`navbar-start hidden lg:flex gap-12 ${
-            isOffset ? 'text-neutral' : 'text-neutral-content'
+            isOffset || isNotHome ? 'text-neutral' : 'text-neutral-content'
           } font-secondary`}
         >
           <Link href="/">home</Link>
@@ -43,13 +46,15 @@ function Navbar() {
           >
             get in touch
           </button>
-          <span
-            className={`hidden lg:flex ${
-              isOffset ? 'text-neutral' : 'text-neutral-content'
-            } font-secondary`}
-          >
-            faq
-          </span>
+          <Link href="/faq">
+            <span
+              className={`hidden lg:flex ${
+                isOffset || isNotHome ? 'text-neutral' : 'text-neutral-content'
+              } font-secondary`}
+            >
+              faq
+            </span>
+          </Link>
         </div>
       </div>
     </nav>

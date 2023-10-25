@@ -55,7 +55,7 @@ function Contacts() {
             <LiaFacebook />
           </a>
           <a
-            href="mailto:ask@rymphotoworks.com"
+            href="mailto:rym.photography@yahoo.com"
             target="_blank"
             rel="noopener noreferrer"
           >

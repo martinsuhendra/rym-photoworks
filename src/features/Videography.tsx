@@ -3,11 +3,13 @@ import VideoCarousel from '@/components/VideoCarousel'
 
 function Videography() {
   return (
-    <SectionWrapper subtitle="See" title="Videography">
-      <div className="flex justify-center items-center">
-        <VideoCarousel />
-      </div>
-    </SectionWrapper>
+    <div className="relative">
+      <SectionWrapper subtitle="See" title="Videography">
+        <div className="flex justify-center items-center">
+          <VideoCarousel />
+        </div>
+      </SectionWrapper>
+    </div>
   )
 }
 
